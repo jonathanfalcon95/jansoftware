@@ -6,11 +6,11 @@ include('is_logged.php'); //Archivo ver
 $query_empresa = mysqli_query($con, "select * from perfil where id_perfil=1");
 $row = mysqli_fetch_array($query_empresa);
 $precioC = floatval($_GET['precioc']);
-$porcentaje = floatval($row['porcentaje']);
+$precio_dolar = floatval($row['precio_dolar']);
 
-$pvp = ($precioC * $porcentaje ) / 100;
+$pvp = ($precioC * $precio_dolar);
 $pvp = number_format($pvp, 2, '.', '');
-$total = $precioC + $pvp;
+$total = $pvp;
 
 echo $total;
 ?>

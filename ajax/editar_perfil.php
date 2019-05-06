@@ -17,8 +17,10 @@ date_default_timezone_set('America/Caracas');
            $errors[] = "Dirección esta vacío";
         } else if (empty($_POST['ciudad'])) {
            $errors[] = "Dirección esta vacío";
-           } else if (empty($_POST['porcentaje'])) {
+        } else if (empty($_POST['porcentaje'])) {
            $errors[] = "porcentaje de venta esta vacío";
+         } else if (empty($_POST['precio_dolar'])) {
+           $errors[] = "precio_dolar de venta esta vacío";
         }   else if (
 			!empty($_POST['nombre_empresa']) &&
 			!empty($_POST['telefono']) &&
@@ -36,16 +38,25 @@ date_default_timezone_set('America/Caracas');
 		$telefono=mysqli_real_escape_string($con,(strip_tags($_POST["telefono"],ENT_QUOTES)));
 		$email=mysqli_real_escape_string($con,(strip_tags($_POST["email"],ENT_QUOTES)));
 		$impuesto=mysqli_real_escape_string($con,(strip_tags($_POST["impuesto"],ENT_QUOTES)));
-                $porcentaje=mysqli_real_escape_string($con,(strip_tags($_POST["porcentaje"],ENT_QUOTES)));
+		$precio_dolar=mysqli_real_escape_string($con,(strip_tags($_POST["precio_dolar"],ENT_QUOTES)));
+        $porcentaje=mysqli_real_escape_string($con,(strip_tags($_POST["porcentaje"],ENT_QUOTES)));
 		$moneda=mysqli_real_escape_string($con,(strip_tags($_POST["moneda"],ENT_QUOTES)));
 		$direccion=mysqli_real_escape_string($con,(strip_tags($_POST["direccion"],ENT_QUOTES)));
 		$ciudad=mysqli_real_escape_string($con,(strip_tags($_POST["ciudad"],ENT_QUOTES)));
 		$estado=mysqli_real_escape_string($con,(strip_tags($_POST["estado"],ENT_QUOTES)));
 		$codigo_postal=mysqli_real_escape_string($con,(strip_tags($_POST["codigo_postal"],ENT_QUOTES)));
 		
-		$sql="UPDATE perfil SET nombre_empresa='".$nombre_empresa."', telefono='".$telefono."', email='".$email."', impuesto='".$impuesto."',porcentaje='".$porcentaje."', moneda='".$moneda."', direccion='".$direccion."', ciudad='".$ciudad."', estado='".$estado."', codigo_postal='$codigo_postal' WHERE id_perfil='1'";
+		$sql="UPDATE perfil SET nombre_empresa='".$nombre_empresa."', telefono='".$telefono."', email='".$email."', impuesto='".$impuesto."',porcentaje='".$porcentaje."',precio_dolar='".$precio_dolar."' , moneda='".$moneda."', direccion='".$direccion."', ciudad='".$ciudad."', estado='".$estado."', codigo_postal='$codigo_postal' WHERE id_perfil='1'";
+
+        $sql_precios="UPDATE products SET precio_producto = '".$precio_dolar."' * precio_compra WHERE status_producto =  '1'";
+
+		
+
+
+
 		$query_update = mysqli_query($con,$sql);
-			if ($query_update){
+		$query_productos = mysqli_query($con,$sql_precios);
+			if ($query_update && $query_productos){
 				$messages[] = "Datos han sido actualizados satisfactoriamente.";
 			} else{
 				$errors []= "Lo siento algo ha salido mal intenta nuevamente.".mysqli_error($con);

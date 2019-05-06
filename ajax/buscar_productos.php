@@ -118,18 +118,20 @@ date_default_timezone_set('America/Caracas');
 						<td ><?php echo $nombre_producto; ?></td>
 						<td><?php echo $descripcion;?></td>
 						<td><?php echo $stock;?></td>
+                        <td><?php echo $simbolo_moneda;?><span class='pull-right'><?php $preciof=$precio_producto/(1+($iva/100)); echo number_format($preciof,2,",",".");?></span></td>
+
 						<td><?php echo $simbolo_moneda;?><span class='pull-right'><?php echo number_format($precio_producto,2,",",".");?></span></td>
-                                                <td><?php echo $simbolo_moneda;?><span class='pull-right'><?php $preciof=$precio_producto+($iva*$precio_producto/100); echo number_format($preciof,2,",",".");?></span></td>
+                                               
 					<td><span class="pull-right">
 						<!-- <a href="#" class='btn btn-default' title='Editar producto' onclick="obtener_datos('<?php  $id_producto;?>');" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-edit"></i></a>  -->
-					<a href="producto.php?id=<?php echo $id_producto;?>" class='btn btn-default' title='Editar producto'> <i class="glyphicon glyphicon-edit" ></i> </a> 
+					<a href="producto.php?id=<?php echo $id_producto;?>" class='btn btn-default' title='<?php echo $id_producto;?>'> <i class="glyphicon glyphicon-edit" ></i> </a> 
 					<!-- <a href="#" class='btn btn-default' title='Borrar producto' onclick="eliminar('<?php  $id_producto; ?>')"><i class="glyphicon glyphicon-trash"></i> </a></span></td> -->
 						
 					</tr>
 					<?php
 				}
 				?>
-				<tr>
+				<tr> 
 					<td colspan=6><span class="pull-right">
 					<?php
 					 echo paginate($reload, $page, $total_pages, $adjacents);

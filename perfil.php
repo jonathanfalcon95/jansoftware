@@ -85,6 +85,10 @@ $row = mysqli_fetch_array($query_empresa);
                                                     <td>Porcentaje de venta (%):</td>
                                                     <td><input type="text" class="form-control input-sm" required name="porcentaje" value="<?php echo $row['porcentaje'] ?>"></td>
                                                 </tr>
+                                                 <tr>
+                                                    <td>Precio de 1$ en Bs:</td>
+                                                    <td><input type="text" class="form-control input-sm" required name="precio_dolar" value="<?php echo $row['precio_dolar'] ?>"></td>
+                                                </tr>
                                                 <tr>
                                                     <td>Simbolo de moneda:</td>
                                                     <td>
