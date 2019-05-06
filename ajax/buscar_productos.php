@@ -105,6 +105,7 @@ date_default_timezone_set('America/Caracas');
 //						$date_added= date('d/m/Y', strtotime($row['date_added']));
 						$stock=$row['stock'];
 						$precio_producto=$row['precio_producto'];
+						$precio_compra=$row['precio_compra'];
 					?>
 					
 					<input type="hidden" value="<?php echo $codigo_producto;?>" id="codigo_producto<?php echo $id_producto;?>">
@@ -124,7 +125,7 @@ date_default_timezone_set('America/Caracas');
                                                
 					<td><span class="pull-right">
 						<!-- <a href="#" class='btn btn-default' title='Editar producto' onclick="obtener_datos('<?php  $id_producto;?>');" data-toggle="modal" data-target="#myModal2"><i class="glyphicon glyphicon-edit"></i></a>  -->
-					<a href="producto.php?id=<?php echo $id_producto;?>" class='btn btn-default' title='<?php echo $id_producto;?>'> <i class="glyphicon glyphicon-edit" ></i> </a> 
+					<a href="producto.php?id=<?php echo $id_producto;?>" class='btn btn-default' title='<?php echo $precio_compra;?>'> <i class="glyphicon glyphicon-edit" ></i> </a> 
 					<!-- <a href="#" class='btn btn-default' title='Borrar producto' onclick="eliminar('<?php  $id_producto; ?>')"><i class="glyphicon glyphicon-trash"></i> </a></span></td> -->
 						
 					</tr>
