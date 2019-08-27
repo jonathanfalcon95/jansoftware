@@ -32,7 +32,7 @@
 	
     <div class="container">
 	<div class="panel panel-info">
-		<div class="panel-heading">
+		<div  style="background:grey" class="panel-heading"">
 		    <div class="btn-group pull-right">
 				<button type='button' class="btn btn-info" data-toggle="modal" data-target="#nuevoCliente"><span class="glyphicon glyphicon-plus" ></span> Nuevo Cliente</button>
 			</div>

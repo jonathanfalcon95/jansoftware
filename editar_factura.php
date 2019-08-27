@@ -61,7 +61,7 @@ date_default_timezone_set('America/Caracas');
 	?>  
     <div class="container">
 	<div class="panel panel-info">
-		<div class="panel-heading">
+		<div style="background:grey" class="panel-heading"">
 			<h4><i class='glyphicon glyphicon-edit'></i> Editar Factura</h4>
 		</div>
 		<div class="panel-body">

@@ -28,7 +28,7 @@ require_once ("config/conexion.php"); //Contiene funcion que conecta a la base d
         ?>  
         <div class="container">
             <div class="panel panel-info">
-                <div class="panel-heading">
+                <div style="background:grey" class="panel-heading"">
                     <h4><i class='glyphicon glyphicon-edit'></i> Nueva Factura</h4>
                 </div>
                 <div class="panel-body">

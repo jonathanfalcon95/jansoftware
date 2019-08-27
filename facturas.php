@@ -25,8 +25,8 @@ date_default_timezone_set('America/Caracas');
 	include("navbar.php");
 	?>  
     <div class="container">
-		<div class="panel panel-info">
-		<div class="panel-heading">
+		<div  class="">
+		<div style="background:grey" class="panel-heading"">
 		    <div class="btn-group pull-right">
 				<a  href="nueva_factura.php" class="btn btn-info"><span class="glyphicon glyphicon-plus" ></span> Nueva Factura</a>
 			</div>
