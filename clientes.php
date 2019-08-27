@@ -2,7 +2,7 @@
 	/*-------------------------
 	Autor: Obed Alvarado
 	Web: obedalvarado.pw
-	Mail: info@obedalvarado.pw
+	Mail: primary@obedalvarado.pw
 	---------------------------*/
 	session_start();
 	if (!isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] != 1) {
@@ -31,10 +31,10 @@
 	?>
 	
     <div class="container">
-	<div class="panel panel-info">
+	<div class="panel panel-primary">
 		<div  style="background:grey" class="panel-heading"">
 		    <div class="btn-group pull-right">
-				<button type='button' class="btn btn-info" data-toggle="modal" data-target="#nuevoCliente"><span class="glyphicon glyphicon-plus" ></span> Nuevo Cliente</button>
+				<button type='button' class="btn btn-primary" data-toggle="modal" data-target="#nuevoCliente"><span class="glyphicon glyphicon-plus" ></span> Nuevo Cliente</button>
 			</div>
 			<h4><i class='glyphicon glyphicon-search'></i> Buscar Clientes</h4>
 		</div>

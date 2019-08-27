@@ -28,7 +28,7 @@ date_default_timezone_set('America/Caracas');
 		<div  class="">
 		<div style="background:grey" class="panel-heading"">
 		    <div class="btn-group pull-right">
-				<a  href="nueva_factura.php" class="btn btn-info"><span class="glyphicon glyphicon-plus" ></span> Nueva Factura</a>
+				<a  href="nueva_factura.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus" ></span> Nueva Factura</a>
 			</div>
 			<h4><i class='glyphicon glyphicon-search'></i> Buscar Facturas</h4>
 		</div>

@@ -4,7 +4,7 @@ date_default_timezone_set('America/Caracas');
 	/*-------------------------
 	Autor: Obed Alvarado
 	Web: obedalvarado.pw
-	Mail: info@obedalvarado.pw
+	Mail: primary@obedalvarado.pw
 	---------------------------*/
 	/* Connect To Database*/
 	require_once ("../config/db.php");//Contiene las variables de configuracion para conectar a la base de datos
@@ -84,7 +84,7 @@ date_default_timezone_set('America/Caracas');
 			?>
 			<div class="table-responsive">
 			  <table class="table">
-				<tr  class="info">
+				<tr  class="primary">
 					<th>ID</th>
 					<th>Nombres</th>
 					<th>Usuario</th>

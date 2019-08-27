@@ -32,7 +32,7 @@ $title = "Productos ";
             <div class="panel panel-primary">
                 <div style="background:grey" class="panel-heading">
                     <div class="btn-group pull-right">
-                        <button type='button' class="btn btn-info" data-toggle="modal" data-target="#nuevoProducto"><span class="glyphicon glyphicon-plus" ></span> Nuevo Producto</button>
+                        <button type='button' class="btn btn-primary" data-toggle="modal" data-target="#nuevoProducto"><span class="glyphicon glyphicon-plus" ></span> Nuevo Producto</button>
                     </div>
                     <h4><i class='glyphicon glyphicon-search'></i> Buscar Productos</h4>
                 </div>

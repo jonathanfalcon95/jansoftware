@@ -60,7 +60,7 @@ date_default_timezone_set('America/Caracas');
 	include("navbar.php");
 	?>  
     <div class="container">
-	<div class="panel panel-info">
+	<div class="panel panel-primary">
 		<div style="background:grey" class="panel-heading"">
 			<h4><i class='glyphicon glyphicon-edit'></i> Editar Factura</h4>
 		</div>

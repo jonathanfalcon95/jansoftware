@@ -81,7 +81,7 @@ date_default_timezone_set('America/Caracas');
 			?>
 			<div class="table-responsive">
 			  <table class="table table-condensed table-hover">
-				<tr  class="info">
+				<tr  class="primary">
 					<th>Código</th>
 					<th>Producto</th>
 					<th>Descripcion</th>

@@ -4,7 +4,7 @@ date_default_timezone_set('America/Caracas');
 	/*-------------------------
 	Autor: Obed Alvarado
 	Web: obedalvarado.pw
-	Mail: info@obedalvarado.pw
+	Mail: primary@obedalvarado.pw
 	---------------------------*/
 include('is_logged.php');//Archivo verifica que el usario que intenta acceder a la URL esta logueado
 $id_factura= $_SESSION['id_factura'];

@@ -4,7 +4,7 @@ date_default_timezone_set('America/Caracas');
 /* -------------------------
   Autor: Obed Alvarado
   Web: obedalvarado.pw
-  Mail: info@obedalvarado.pw
+  Mail: primary@obedalvarado.pw
   --------------------------- */
 session_start();
 if (!isset($_SESSION['user_login_status']) AND $_SESSION['user_login_status'] != 1) {
@@ -40,7 +40,7 @@ $row = mysqli_fetch_array($query_empresa);
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 toppad" >
 
 
-                        <div class="panel panel-info">
+                        <div class="panel panel-primary">
                             <div style="background:grey" class="panel-heading"">
                                 <h3 class="panel-title"><i class='glyphicon glyphicon-cog'></i> Configuración</h3>
                             </div>

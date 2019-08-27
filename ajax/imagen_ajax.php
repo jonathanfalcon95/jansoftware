@@ -7,7 +7,7 @@
 				$target_dir="../img/";
 				$image_name = time()."_".basename($_FILES["imagefile"]["name"]);
 				$target_file = $target_dir . $image_name;
-				$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
+				$imageFileType = pathprimary($target_file,PATHINFO_EXTENSION);
 				$imageFileZise=$_FILES["imagefile"]["size"];
 				
 					

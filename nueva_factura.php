@@ -27,7 +27,7 @@ require_once ("config/conexion.php"); //Contiene funcion que conecta a la base d
         include("navbar.php");
         ?>  
         <div class="container">
-            <div class="panel panel-info">
+            <div class="panel panel-primary">
                 <div style="background:grey" class="panel-heading"">
                     <h4><i class='glyphicon glyphicon-edit'></i> Nueva Factura</h4>
                 </div>

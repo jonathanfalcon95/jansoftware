@@ -80,7 +80,7 @@ date_default_timezone_set('America/Caracas');
 			?>
 			<div class="table-responsive">
 			  <table class="table">
-				<tr  class="info">
+				<tr  class="primary">
                                         <th>Cedula</th>
 					<th>Nombre</th>
 					<th>Teléfono</th>

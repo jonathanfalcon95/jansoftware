@@ -63,7 +63,7 @@ date_default_timezone_set('America/Caracas');
 			?>
 			<div class="table-responsive">
 			  <table class="table">
-				<tr  class="info">
+				<tr  class="primary">
 					<th>#</th>
 					<th>Fecha</th>
 					<th>Cliente</th>

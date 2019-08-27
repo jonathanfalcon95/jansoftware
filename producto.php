@@ -84,7 +84,7 @@ if (isset($_GET['id'])) {
                                     <img class="item-img img-responsive" src="img/stock.png" alt=""> 
                                     <br>
                                     <a href="#" class="btn btn-danger" onclick="eliminar('<?php echo $row['id_producto']; ?>')" title="Eliminar"> <i class="glyphicon glyphicon-trash"></i> Eliminar </a> 
-                                    <a href="#myModal2" data-toggle="modal" data-codigo='<?php echo $row['codigo_producto']; ?>' data-nombre='<?php echo $row['nombre_producto']; ?>' data-descripcion='<?php echo $row['descripcion'] ?>' data-precioc='<?php echo $row['precio_compra'] ?>' data-precio='<?php echo $row['precio_producto'] ?>' data-stock='<?php echo $row['stock']; ?>' data-id='<?php echo $row['id_producto']; ?>' class="btn btn-info" title="Editar"> <i class="glyphicon glyphicon-pencil"></i> Editar </a>	
+                                    <a href="#myModal2" data-toggle="modal" data-codigo='<?php echo $row['codigo_producto']; ?>' data-nombre='<?php echo $row['nombre_producto']; ?>' data-descripcion='<?php echo $row['descripcion'] ?>' data-precioc='<?php echo $row['precio_compra'] ?>' data-precio='<?php echo $row['precio_producto'] ?>' data-stock='<?php echo $row['stock']; ?>' data-id='<?php echo $row['id_producto']; ?>' class="btn btn-primary" title="Editar"> <i class="glyphicon glyphicon-pencil"></i> Editar </a>	
 
                                 </div>
 
@@ -226,7 +226,7 @@ if (isset($_GET['id'])) {
 
                                         $('#myModal2').on('show.bs.modal', function(event) {
                                             var button = $(event.relatedTarget) // Button that triggered the modal
-                                            var codigo = button.data('codigo') // Extract info from data-* attributes
+                                            var codigo = button.data('codigo') // Extract primary from data-* attributes
                                             var nombre = button.data('nombre')
                                             var descripcion = button.data('descripcion')
                                             //var categoria = button.data('categoria')
